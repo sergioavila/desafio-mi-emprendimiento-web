@@ -1,0 +1,26 @@
+@keyframes translate {
+    0%{
+        transform: translateX(150px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.etiqueta{
+    animation: translate 2s linear infinite alternate;
+}
+.tuerca__interna,
+.tuerca__externa{
+    animation: rotate 2s linear infinite;
+    transform-origin: 80% 80%;
+}
