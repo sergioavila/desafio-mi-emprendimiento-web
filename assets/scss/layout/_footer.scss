@@ -1,0 +1,17 @@
+footer{
+    background-color: $sable;
+    text-align: center;
+    color: $white;
+    font-family: $ubuntu;
+    padding: 3em 4em;
+    a{
+        color: $white;
+        text-decoration: none;
+        display: block;
+        margin: 16px 0;
+    }
+    .button,
+    input{
+        margin: 4px auto;
+    }
+}

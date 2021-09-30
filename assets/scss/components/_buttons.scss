@@ -1,9 +1,11 @@
 .button{
     display: block;
-    padding: 0.7em 1em;
+    padding: 0.4em 0.2em;
     background-color: $tangerine;
     text-decoration: none;
     color: $black;
+    border-radius: 10px;
+    font-size: 1.1em;
     &:hover{
         background-color: $white;
     }

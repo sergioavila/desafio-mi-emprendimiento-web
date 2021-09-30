@@ -1481,15 +1481,110 @@ input[type=checkbox]:checked ~ .navbar__list {
   margin-left: 4px;
 }
 
+.sidebar {
+  border: 1px solid #000000;
+  margin: 8px;
+  padding: 16px 8px;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 16px;
+}
+.sidebar figure {
+  width: 70%;
+  margin: auto;
+}
+.sidebar figure img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+.sidebar h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 1em auto;
+}
+.sidebar .rrss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.sidebar .rrss a {
+  margin: 0 4px;
+}
+.sidebar .rrss a svg {
+  height: 30px;
+  width: 30px;
+}
+.sidebar p {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.sidebar h3 {
+  text-align: center;
+  display: block;
+  background-color: #060606;
+  color: #FFFFFF;
+  font-size: 1.3em;
+  padding: 8px 0;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.sidebar ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+.sidebar ul a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #060606;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Ubuntu", sans-serif;
+  padding: 3em 4em;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  margin: 16px 0;
+}
+footer .button,
+footer input {
+  margin: 4px auto;
+}
+
 .button {
   display: block;
-  padding: 0.7em 1em;
+  padding: 0.4em 0.2em;
   background-color: #FFAF6D;
   text-decoration: none;
   color: #000000;
+  border-radius: 10px;
+  font-size: 1.1em;
 }
 .button:hover {
   background-color: #FFFFFF;
+}
+
+input {
+  display: block;
+  padding: 0.4em 0.2em;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+input:focus {
+  background-color: #FFAF6D;
 }
 
 /*# sourceMappingURL=main.css.map */
