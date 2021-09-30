@@ -1341,7 +1341,7 @@ table {
 }
 
 .navbar {
-  width: 100%;
+  width: 100vw;
   background-color: black;
   display: flex;
   align-items: center;
@@ -1378,6 +1378,9 @@ table {
   padding: 1em;
   display: block;
 }
+.navbar__link:hover, .navbar__link:active {
+  color: #FFA500;
+}
 .navbar__item--toggler {
   text-decoration: none;
   width: 10%;
@@ -1400,13 +1403,27 @@ input[type=checkbox]:checked ~ .navbar__list {
 }
 
 @media (min-width: 600px) {
+  .navbar {
+    height: 70px;
+  }
+  .navbar__logo {
+    width: 40px;
+    padding: 1em 2em;
+  }
   .navbar__toggler {
     display: none;
   }
   .navbar__list {
     position: relative;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    width: auto;
+    top: 0;
+    margin-right: 32px;
+  }
+  .navbar__item {
+    font-size: 1em;
   }
 }
 .header .mainbanner {
@@ -1495,6 +1512,44 @@ input[type=checkbox]:checked ~ .navbar__list {
   margin-left: 4px;
 }
 
+@media (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .c2020 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+  }
+  .c2020 img {
+    max-width: 50vw;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .sidebar figure {
+    max-width: 180px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    margin-top: 8px;
+  }
+  .footer__links {
+    display: flex;
+  }
+  .footer__links a {
+    margin-right: 32px;
+  }
+  .footer__links form {
+    display: flex;
+  }
+}
 .sidebar {
   border: 1px solid #000000;
   margin: 8px;

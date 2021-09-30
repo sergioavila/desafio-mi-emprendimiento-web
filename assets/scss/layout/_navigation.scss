@@ -1,5 +1,5 @@
 .navbar {
-    width: 100%;
+    width: 100vw;
     background-color: black;
     display: flex;
     align-items: center;
@@ -34,6 +34,10 @@
         text-decoration: none;
         padding: 1em;
         display: block;
+        &:hover,
+        &:active{
+            color: $orange;
+        }
     }
     &__item--toggler {
         text-decoration: none;
@@ -52,7 +56,6 @@
             }
         }
     }
-    
     input[type="checkbox"] {
         display: none;
     }
@@ -64,13 +67,25 @@
   
   @media (min-width: 600px) {
     .navbar{
+        height: 70px;
+        &__logo{
+            width: 40px;
+            padding: 1em 2em;
+        }
         &__toggler {
             display: none;
-          }
+        }
         &__list {
-        position: relative;
-        display: flex;
-        align-items: center;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            height: auto;
+            width: auto;
+            top: 0;
+            margin-right: 32px;
+        }
+        &__item{
+            font-size: 1em;
         }
     }
   }

@@ -50,6 +50,40 @@
     }
 }
 @media (min-width: $breakpoint-desktop){
-
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .c2020{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        img{
+            max-width: 50vw;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .sidebar {
+        figure{
+            max-width: 180px;
+        }
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+        margin-top: 8px;
+        &__links{
+            display: flex;
+            a{
+                margin-right: 32px;
+            }
+            form{
+                display: flex;
+            }
+        }
+    }
 
 }
