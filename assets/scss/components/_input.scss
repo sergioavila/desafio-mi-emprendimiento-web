@@ -1,0 +1,10 @@
+input{
+    display: block;
+    padding: 0.7em 1em;
+    background-color: $white;
+    text-decoration: none;
+    color: $black;
+    &:focus{
+        background-color: $tangerine;
+    }
+}

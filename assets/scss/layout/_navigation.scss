@@ -1,0 +1,68 @@
+.navbar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+        padding: 1em 2em;
+    }
+    &__list {
+        list-style: none;
+        margin-bottom: 0;
+        padding: 2rem 1rem;
+      
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        width: 35%;
+        right: 0px;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+      }
+    &__item {
+        text-decoration: none;
+        color: white;
+        margin: 0.5rem;
+    }
+    
+    &__item--toggler {
+        text-decoration: none;
+        width: 10%;
+    }
+    &__toggler {
+        padding: 1em 2em;
+        svg{
+            fill: white;
+            width: 35px;
+        }
+        &:hover,
+        &:active{
+            svg{
+                fill: $orange;
+            }
+        }
+    }
+    
+    input[type="checkbox"] {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ &__list {
+        transform: translateX(0%);
+    }
+  }
+
+  
+  @media (min-width: 600px) {
+    .navbar{
+        &__toggler {
+            display: none;
+          }
+        &__list {
+        position: relative;
+        display: flex;
+        align-items: center;
+        }
+    }
+  }
+  

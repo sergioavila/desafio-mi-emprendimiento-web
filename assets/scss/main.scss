@@ -1,0 +1,21 @@
+//Vendors
+//Bootstrap grid
+@import "vendors/bootstrap/functions";
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/mixins";
+@import 'vendors/bootstrap/grid';
+//Remixicons
+@import 'vendors/remixicon/remixicon.css';
+
+@import 'abstracts/variables';
+
+@import 'base/typography';
+@import 'base/reset';
+
+//layout
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/content';
+
+//components
+@import 'components/buttons';
