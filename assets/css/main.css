@@ -1346,26 +1346,37 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  height: 120px;
+  position: fixed;
+  top: 0;
 }
 .navbar__logo {
   padding: 1em 2em;
 }
 .navbar__list {
   list-style: none;
-  margin-bottom: 0;
-  padding: 2rem 1rem;
-  position: fixed;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.9);
-  height: 100vh;
-  width: 35%;
-  right: 0px;
-  transform: translateX(100%);
-  transition: transform 0.5s;
+  width: 100vw;
+  left: 0;
+  top: 120px;
+  height: 0;
+  overflow-y: hidden;
+  transition: all 0.4s;
 }
 .navbar__item {
   text-decoration: none;
   color: white;
-  margin: 0.5rem;
+  font-size: 1.4em;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.navbar__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 1em;
+  display: block;
 }
 .navbar__item--toggler {
   text-decoration: none;
@@ -1385,7 +1396,7 @@ table {
   display: none;
 }
 input[type=checkbox]:checked ~ .navbar__list {
-  transform: translateX(0%);
+  height: calc(100vh - 120px);
 }
 
 @media (min-width: 600px) {
@@ -1431,6 +1442,9 @@ input[type=checkbox]:checked ~ .navbar__list {
   display: none;
 }
 
+.c2020 {
+  margin-top: 120px;
+}
 .c2020 img {
   width: 100%;
 }
